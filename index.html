@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lambda; .</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="s.css">
+    <script type="text/javascript" src="http://use.typekit.com/ejs8avt.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1><strong>&lambda;</strong>&nbsp;<a href="//phuu.net" class="heart">&hearts;</a></h1>
+        <nav>
+          <form id="search" action="//google.com/search" method="get">
+             <label id="short" class="small tinymsg">Open this in another browser:</label><label id="fail" class="small tinymsg">Gah, summat broke :/</label><input type="text" name="q" id="q" placeholder="search">
+          </form>
+          <span class="menu"><a href="#" id="new" class="toggle" role="new">+</a><a href="#" id="edit" role="edit">&times;</a><a href="#" id="help" role="help">?</a></span>
+        </nav>
+      </header>
+      <section id="ops"><div id="opslinks"><a href="#" id="export">Export</a><a href="#" id="remove">Remove a link</a><a href="#" id="reset">Reset</a></div></section>
+      <section id="add">
+        <form id="addform" action="#" novalidate>
+          <input type="text" name="t" id="text" placeholder="Website (eg: Flickr)">
+          <input type="url" name="l" id="link" placeholder="Link (eg: flickr.com)">
+          <div id="addformbuttons"><a href="#" id="doadd">+</a><a href="#" class="toggle" id="closeadd">&times;</a></div>
+        </form>
+      </section>
+      <aside id="welcome">
+        <h2>Hey!</h2>
+        <p><em>Make this your homepage. Add some links. Click 'em.</em> <span class="aside">(simple, right?)</span></p>
+        <p>I've set you up with some to get going, use the <span class="icon new">+</span> to add more.</p>
+        <p><span class="icon edit">&times;</span> lets you remove links and reset your link set.</p>
+        <p><span class="icon help">?</span> shows you this quick intro again.</p>
+        <p><em>Enjoy,</em></p>
+        <p><a href="#" class="heart bigheart" role="help">&hearts;</a><a href="//github.com/phuu/10k" class="extra small">Oh, and there's more...</a></p>
+      </aside>
+      <aside id="import">
+        <h2>It worked!</h2>
+        <p>You just <em>imported your links</em> from another browser. <span class="aside">(high-five!)</span></p>
+        <p>Remember, <span class="icon help">?</span> shows you the quick intro again.</p>
+        <p><em>Ciao,</em></p>
+        <p><a href="#" class="heart bigheart" role="import">&hearts;</a><a href="//github.com/phuu/10k" class="extra small">Oh, and there's more...</a></p>
+      </aside>
+      <aside id="no-js">
+        <h2>Ach, sorry! It's that pesky Javascript...</h2>
+        <p>I'm afraid you're gonna need a "modern browser" with Javascript enabled to use this app. Muchos apologies.<p>
+        <p>Why? Because this little baby uses <a href="//diveintohtml5.org/storage.html">local storage</a> and lots of JS to make it tick. HTML5 indeed, don't ya know.<p>
+      </aside>
+      <section id="top" class="links"><!-- Links inserted here --></section>
+      <section id="others" class="links"><span class="aside">(more links here)</span></section>
+    </div>
+    <script>
+      // Got js :)
+      if(window.localStorage !== null) document.getElementById("page").removeChild(document.getElementById("no-js"))
+      // meta viewport ipad fix http://adactio.com/journal/4470/
+      if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {var viewportmeta = document.querySelector('meta[name="viewport"]');if (viewportmeta) {viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';document.body.addEventListener('gesturestart', function() {viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6'}, false)}}
+    </script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+    <script src="a.js"></script>
+  </body>
+</html>
