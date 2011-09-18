@@ -22,7 +22,7 @@ The red x in the top right gives you access to a menu from which you can remove,
 
 Clicking "Remove a link" allows you to select a link to remove from your list. After clicking, the links with change to red. Simply click on the one you wish to remove, and click "Ok". You're done :)
 
-### Exporting you links
+### Exporting your links
 
 More documentation coming soon, but for now:
 
