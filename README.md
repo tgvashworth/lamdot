@@ -1,6 +1,6 @@
-# λ .
+# [λ .](http://phuu.github.com/lamdot)
 
-Tiny homepage built for 10k Apart 2011, by [phuu](phuu.net)
+Tiny homepage built for 10k Apart 2011.
 
 ## Getting started
 
