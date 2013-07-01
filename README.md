@@ -1,4 +1,4 @@
-# [λ .](http://phuu.github.com/10k)
+# [λ .](http://phuu.github.io/lamdot)
 
 Tiny homepage built for 10k Apart 2011.
 
